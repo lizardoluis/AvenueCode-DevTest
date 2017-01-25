@@ -71,8 +71,8 @@ Body:
 
 ### Comments ###
 
-* I assumed that an Image entity has a path to image, instead of storing the bytes of the image.
-* I considered that deleting an Project, also deletes the images associated and sub-products. Its also not possible to delete an image or sub-product associated with an parent product.
-* I implemented a product entity with a list of subproducts and images. An alternative is to add a foreign key on both product and image relating them to its parent product. But I thought that would be more optimized to retrieve if they are on a list inside product.
+* I assumed that an Image Entity has a path to a image file stored in the file system, instead of storing the bytes of the image.
+* I considered deleting an Project, also deletes the images and sub-products associated. Its also not possible to delete an image or sub-product associated with an parent product.
+* I implemented a Product Entity with a list of subproducts and images. An alternative is to add a foreign key on both product and image relating them to their parent product. But I think it is more optimized to retrieve if they are on a list inside product.
 * Image and Product implements all CRUD operations.
-* I had a problem to query for a specific product and return it without images and subproducts. So in this type of query, I get the complete product, erase the images and subproducts and return to the user the simple version.
+* I had a problem query a specific product and to return this product without images and subproducts. So in this type of query, I get the complete product, erase the images and subproducts and return to the user the simple version. Not a efficient solution though :/
