@@ -34,12 +34,15 @@ Development test for Avenue Code.
 ### API ###
 
 * Get all products: http://localhost:8080/products
+
 * Get all products excluding relationships: http://localhost:8080/products?simple=true
 
 * Get a specific product: http://localhost:8080/products/{id}
+
 * Get a specific product excluding relationships: http://localhost:8080/products/{id}?simple=true
 
 * Get set of child products for specific product: http://localhost:8080/products/{id}/subproducts
+
 * Get set of images for specific product: http://localhost:8080/products/{id}/images
 
 * Get all images: http://localhost:8080/images
