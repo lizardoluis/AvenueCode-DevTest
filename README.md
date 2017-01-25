@@ -10,19 +10,27 @@ Development test for Avenue Code.
 
 ### How to run automated test ###
 
+
+```
 #!console
+
 ../AvenueCode-DevTest$ mvn clean
 ../AvenueCode-DevTest$ mvn test
 ```
 
+
 #### How to run the application ####
+
 
 ```
 #!console
+
 ../AvenueCode-DevTest$ mvn clean
 ../AvenueCode-DevTest$ mvn install
 ../AvenueCode-DevTest$ mvn spring-boot:run
 ```
+
+
 
 ### API ###
 
@@ -41,6 +49,10 @@ Development test for Avenue Code.
 POST Request: http://localhost:8080/products/
 Header: Content-Type : application/json
 Body: 
+
+```
+#!json
+
 {
   "name": "productName",
   "description": "product description",
@@ -52,6 +64,8 @@ Body:
   		}
   	]
 }
+```
+
 
 ### Comments ###
 
@@ -59,4 +73,4 @@ Body:
 * I considered that deleting an Project, also deletes the images associated and sub-products. Its also not possible to delete an image or sub-product associated with an parent product.
 * I implemented a product entity with a list of subproducts and images. An alternative is to add a foreign key on both product and image relating them to its parent product. But I thought that would be more optimized to retrieve if they are on a list inside product.
 * Image and Product implements all CRUD operations.
-* I had a problem to query for a specific product and return it without images and subproducts. So in this type of query, I get the complete product, erase the images and subproducts and return to the user the simple version. 
+* I had a problem to query for a specific product and return it without images and subproducts. So in this type of query, I get the complete product, erase the images and subproducts and return to the user the simple version.
