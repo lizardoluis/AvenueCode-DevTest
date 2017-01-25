@@ -19,7 +19,7 @@ Development test for Avenue Code.
 ```
 
 
-#### How to run the application ####
+### How to run the application ###
 
 
 ```
@@ -29,7 +29,6 @@ Development test for Avenue Code.
 ../AvenueCode-DevTest$ mvn install
 ../AvenueCode-DevTest$ mvn spring-boot:run
 ```
-
 
 
 ### API ###
@@ -46,8 +45,11 @@ Development test for Avenue Code.
 * Get all images: http://localhost:8080/images
 
 * Add a product: 
+
 POST Request: http://localhost:8080/products/
+
 Header: Content-Type : application/json
+
 Body: 
 
 ```
